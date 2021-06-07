@@ -1,14 +1,5 @@
-.questions {
-    display: flex;
-    flex-direction: column;
-}
 
-
-.drop-list {
-    display: flex;
-    flex-direction: column;
-}
-
+/* elements */
 header {
     font-family: "Raleway", sans-serif;
 }
@@ -16,23 +7,19 @@ header {
 
 body, html {
     display: flex;
+    flex-direction: column;
     height: 100%;
-}
-
-
-.bg {
-    background-image: url("images/mountain-view-1.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: auto;
 }
 
 
 form {
-
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     font-family: "Raleway", sans-serif;
+    background-color: rgba(223, 241, 255, 0.8);
+    margin: auto;
 }
 
 
@@ -46,3 +33,27 @@ button {
     border-radius: 5px;
     border: none;
 }
+
+
+/* classes */
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.drop-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bg {
+    background-image: url("images/mountain-view-1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(223, 241, 255, 1);
+}
+
