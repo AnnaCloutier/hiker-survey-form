@@ -6,10 +6,29 @@ header {
 
 
 body, html {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     margin: auto;
+}
+
+
+h1 {
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: medium;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 0%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+p {
+    margin-bottom: 0%;
 }
 
 
@@ -20,6 +39,7 @@ form {
     font-family: "Raleway", sans-serif;
     background-color: rgba(223, 241, 255, 0.8);
     margin: auto;
+    padding-bottom: 20px;
 }
 
 
@@ -32,6 +52,24 @@ input {
 button {
     border-radius: 5px;
     border: none;
+    margin-top: 5%;
+    width: 40%;
+    padding: 8px;
+}
+
+
+button:hover {
+    background-color: darkgray;
+    transition-duration: 0.3s;
+}
+
+
+footer {
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    font-size: small;
+    text-align: center;
+    color: #ffffff;
 }
 
 
@@ -55,5 +93,9 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(223, 241, 255, 1);
+}
+
+.type {
+    padding-top: 1em;
 }
 

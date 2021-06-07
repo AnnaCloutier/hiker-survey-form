@@ -21,40 +21,40 @@
     
     <header>
         <h1 id="title">Unofficial New England Hiker Survey</h1>
-        <p id="description">How are you spending time in the mountains of NE?</p>
+        <h2 id="description">How are you spending time in the mountains of NE?</h2>
     </header>
 
     <main>
         <form id="survey-form">
 
-            <div class="questions">
+            <div class="questions type">
                 <label id="name-label" for="name"><strong>What is your name?</strong></label>
                 <input id="name" type="text" name="name" placeholder="Enter your name" required>
             </div>
 
-            <div class="questions">
+            <div class="questions type">
                 <label id="email-label" for="email"><strong>What is your email address?</strong></label>
                 <input id="email" type="email" name="email" placeholder="Enter your email" required>
             </div>
 
-            <div class="questions">
+            <div class="questions type">
                 <label id="number-label" for="number"><strong>What is your age? </strong>(optional)</label>
                 <input id="number" type="number" name="number" min="1" max="110" placeholder="Age">
             </div>
 
             <div id="dropdown">
-                <p class="drop-list"><strong>Please choose your level of hiking experience</strong></p> 
+                <p class="drop-list type"><strong>Please choose your level of hiking experience</strong></p> 
                 <select name="hiking level" size="1">
-                <option value="" disabled selected>Select level</option>
-                <option value="new">New to the mountains</option>
-                <option value="some experience">Some experience on smaller peaks in good weather</option>
-                <option value="more">Experience with some difficult hikes</option>
-                <option value="very">Very experienced with difficult hikes</option>
-                <option value="expert">Expertise across NE with all skill levels and in different seasons</option>
+                    <option value="" disabled selected>Select level</option>
+                    <option value="new">New to the mountains</option>
+                    <option value="some experience">Some experience with easy/moderate ratings</option>
+                    <option value="more">Experience with moderate and some difficult hikes</option>
+                    <option value="very">Very experienced with difficult hikes</option>
+                    <option value="expert">Expertise across NE on all trail ratings in all seasons</option>
                 </select>
             </div>
 
-            <div class="questions">
+            <div class="questions type">
                 <p><strong>What season do you spend the most time hiking in?</strong></p>
                 <label><input id="spring" value="spring" type="radio" name="season"> Spring</label>
                 <label><input id="summer" value="summer" type="radio" name="season"> Summer</label>
@@ -71,7 +71,7 @@
                 <label for="Northeast 111"><input id="Northeast 111" value="northeast 111" type="checkbox" name="checklist hikes"> Northeast 111</label> 
             </div>
 
-            <div>   
+            <div class="type">   
                 <label for="hiking-experience"><strong>Please share your favorite New England hiking experience:</strong></label>
             <textarea id="hiking-experience" name="message" placeholder="Share your adventure with us!" required></textarea>
             </div>
@@ -82,6 +82,6 @@
 
         </form>
         
-        <footer>Happy hiking!</footer>
+        <footer>Happy hiking! &copy Anna Cloutier 2021</footer>
     </main>
 </body>
