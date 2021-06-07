@@ -1,0 +1,48 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.drop-list {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+}
+
+
+body, html {
+    display: flex;
+    height: 100%;
+}
+
+
+.bg {
+    background-image: url("images/mountain-view-1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+form {
+
+    max-width: 600px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+input {
+    border-radius: 5px;
+    border: none;
+}
+
+
+button {
+    border-radius: 5px;
+    border: none;
+}
