@@ -5,9 +5,13 @@ header {
 }
 
 
-body, html {
-    min-height: 100%;
-    margin: auto;
+body {
+    background-image: url("images/mountain-view-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(223, 241, 255, 1);
 }
 
 
@@ -45,7 +49,13 @@ form {
 
 input {
     border-radius: 5px;
-    border: none;
+    border-color: #000000;
+    border-width: 0.5px;
+}
+
+
+textarea {
+    height: 100px;
 }
 
 
@@ -53,8 +63,9 @@ button {
     display: block;
     margin: auto;
     border-radius: 5px;
-    border: none;
-    margin-top: 5%;
+    border-color: #000000;
+    border-width: 0.5px;
+    margin-top: 8%;
     padding: 2% 20% 2% 20%;
 }
 
@@ -66,9 +77,10 @@ button:hover {
 
 
 footer {
-    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0%;
     font-family: "Raleway", sans-serif;
-    font-size: small;
+    font-size: x-small;
     text-align: center;
     color: #ffffff;
 }
@@ -87,22 +99,31 @@ footer {
 }
 
 
-.bg {
-    background-image: url("images/mountain-view-1.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgba(223, 241, 255, 1);
-}
-
-
 .type {
     padding-top: 1em;
     margin-bottom: 1%;
 }
 
 
-/* media query */
-@media all and (min-width: 800px) {
+.type-two {
+    margin-bottom: 1%;
+}
+
+
+.inputs {
+    padding-bottom: 1em;
+}
+
+
+.input-two {
+    border-radius: 5px;
+    border-color: #000000;
+    border-width: 0.5px;
+    width: 70%;
+}
+
+
+/* ids */
+#option {
+    max-width: 75%;
 }

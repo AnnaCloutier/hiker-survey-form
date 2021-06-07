@@ -8,7 +8,7 @@
 
     <title>Unofficial New England Hiker Survey</title>
 
-    <!-- links -->
+        <!-- links -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
@@ -17,24 +17,25 @@
 </head>
 
 
-<body class="bg">
+<body> <!-- class bg went here -->
     
     <header>
-        <h1 id="title">Unofficial New England Hiker Survey</h1>
+        <h1 id="title">New England Hiker Survey</h1>
         <h2 id="description">How are you spending time in the mountains of NE?</h2>
     </header>
 
     <main>
+
         <form id="survey-form">
 
-            <div>
+            <div class="inputs">
                 <label class="questions type" id="name-label" for="name"><strong>What is your name?</strong></label>
-                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                <input class="input-two" id="name" type="text" name="name" placeholder="Enter your name" required>
             </div>
 
-            <div>
+            <div class="inputs">
                 <label class="questions type" id="email-label" for="email"><strong>What is your email address?</strong></label>
-                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <input class="input-two" id="email" type="email" name="email" placeholder="Enter your email" required>
             </div>
 
             <div>
@@ -43,8 +44,8 @@
             </div>
 
             <div id="dropdown">
-                <p class="drop-list type"><strong>Please choose your level of hiking experience</strong></p> 
-                <select name="hiking level" size="1">
+                <p class="drop-list type"><strong>Please choose your level of hiking experience:</strong></p> 
+                <select id="option" name="hiking level" size="1">
                     <option value="" disabled selected>Select level</option>
                     <option value="new">New to the mountains</option>
                     <option value="some experience">Some experience with easy/moderate ratings</option>
@@ -62,7 +63,7 @@
                 <label><input id="winter" value="winter" type="radio" name="season"> Winter</label>
             </div>
 
-            <div class="questions">
+            <div class="questions type-two">
                 <p><strong>Have you completed any of the following lists? </strong>(Check all that apply)</p>
                 <label for="52 view"><input id="52 view" value="52 with a view" type="checkbox" name="checklist hikes"> 52 With a View</label>
                 <label for="WM 4000ft"><input id="WM 4000ft" value="white mountain 4000 footers" type="checkbox" name="checklist hikes"> White Mountain 4000 Footers</label>
@@ -71,17 +72,20 @@
                 <label for="Northeast 111"><input id="Northeast 111" value="northeast 111" type="checkbox" name="checklist hikes"> Northeast 111</label> 
             </div>
 
-            <div class="type">   
-                <label for="hiking-experience"><strong>Please share your favorite New England hiking experience:</strong></label>
+            <div class="questions">   
+                <label class="type" for="hiking-experience"><strong>Please share your favorite New England hiking experience:</strong></label>
             <textarea id="hiking-experience" name="message" placeholder="Share your adventure with us!" required></textarea>
             </div>
 
             <div class="button-div">
+                <script src="script.js"></script>
                 <button type="submit" id="submit">Submit</button>
             </div>
 
+            <footer>Happy hiking! &copyAnna Cloutier 2021</footer>
+
         </form>
         
-        <footer>Happy hiking! &copy Anna Cloutier 2021</footer>
+        
     </main>
 </body>
