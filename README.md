@@ -5,7 +5,7 @@ This project is one of the requirements to earn my certification in Responsive W
 ### *This project is focused on web forms and features:*
 - Mobile-first design
 - HTML5
-- CSS3
+- CSS3, Flexbox
 - JavaScript to acheive simple DOM manipulation
 - Simple use of Markdown syntax
 - Complete and original coding project   
